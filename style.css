@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=New+Amsterdam&display=swap');
+
+
+:root {
+    --fuente-Mate: Matemasie, sans-serif;
+    --fuente-New: New Amsterdam, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+}
+
+.Logo {
+    position: absolute;
+    height: 48px;
+    width: 120px;
+}
+
+.box1 {
+    display: flex;
+    margin: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    gap: 12px;
+}
+
+.input {
+    border: 1px solid aqua;
+    text-align: center;
+    outline: red;
+    width: 38rem;
+    height: 38rem;
+    border-radius: 32px;
+    font-family: var(--fuente-New);
+    font-size: larger;
+
+}
+
+.boxbutton {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.button {
+    width: 12rem;
+    height: 67px;
+    background-color: #0A3871;
+    border: 0.1rem solid aqua;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.box3 {
+    height: 38rem;
+    width: 38rem;
+    border: 1px solid aqua;
+    text-align: center;
+    align-content: center;
+    border-radius: 32px;
+    font-family: var(--fuente-New);
+    font-size: larger;
+}
+
+.Box_COPY {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.cajacopy {
+    display: flex;
+    justify-content: center;
+}
+
+
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: scale .3s ease,
+        display .3s ease allow-discrete;
+    scale: 0;
+
+}
+
+dialog[open] {
+    scale: 1;
+    transition: scale .3s ease-in-out;
+
+    @starting-style {
+        scale: 0;
+    }
+}
+
+button {
+    font-family: var(--fuente-New);
+}
+
+p {
+    font-family: var(--fuente-New);
+    margin: 5px;
+    font-size: 16px;
+}
+
+.Minibutton {
+    display: flex;
+    background-color: #0A3871;
+    border: 0.1rem solid aqua;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-inline: 50px;
+    width: 125px;
+}
